@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Xtream IPTV Player">
+    <title>Xtream IPTV Player</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jQuery for lightweight UI interactions -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Xtream IPTV Player</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li class="nav-item active" data-section="live">LIVE TV</li>
+                    <li class="nav-item" data-section="movies">MOVIES</li>
+                    <li class="nav-item" data-section="series">SERIES</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content-container">
+                <div id="live-section" class="content-section active">
+                    <h2>Live TV</h2>
+                    <div class="categories-list"></div>
+                    <div class="channels-list"></div>
+                </div>
+                <div id="movies-section" class="content-section">
+                    <h2>Movies</h2>
+                    <div class="categories-list"></div>
+                    <div class="movies-list"></div>
+                </div>
+                <div id="series-section" class="content-section">
+                    <h2>Series</h2>
+                    <div class="categories-list"></div>
+                    <div class="series-list"></div>
+                </div>
+            </div>
+            <div id="player-container">
+                <div id="video-player"></div>
+                <div id="player-controls">
+                    <button id="play-pause">Play/Pause</button>
+                    <button id="stop">Stop</button>
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+        </main>
+
+        <div id="loading-overlay">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <div id="error-message"></div>
+    </div>
+
+    <!-- Tizen and Application specific scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="tizen-app.js"></script>
+</body>
+</html>

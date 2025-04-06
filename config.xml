@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/XtreamIPTV" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="XtreamIPTV.XtreamIPTVPlayer" package="XtreamIPTV" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <feature name="http://tizen.org/feature/network.internet"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+    <feature name="http://tizen.org/feature/multimedia.transcoding"/>
+    <feature name="http://tizen.org/feature/multimedia.audio"/>
+    <feature name="http://tizen.org/feature/multimedia.video"/>
+    <feature name="http://tizen.org/feature/tv.inputdevice"/>
+    <feature name="http://tizen.org/feature/tv.audio"/>
+    <feature name="http://tizen.org/feature/tv.display"/>
+    <icon src="images/icon.png"/>
+    <name>Xtream IPTV Player</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.display"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/network.get"/>
+    <tizen:privilege name="http://tizen.org/privilege/system"/>
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
