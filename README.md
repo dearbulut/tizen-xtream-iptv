@@ -1,5 +1,7 @@
 # Xtream IPTV Player for Samsung Tizen TV
 
+Samsung Tizen TV için XTREAM IPTV oynatıcısı
+
 A modern IPTV player application for Samsung Tizen TVs that supports Xtream API protocol.
 
 ## Features
